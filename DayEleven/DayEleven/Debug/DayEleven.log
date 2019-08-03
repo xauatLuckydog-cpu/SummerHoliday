@@ -1,0 +1,44 @@
+﻿  DayEleven.cpp
+E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\xhash(100): error C2064: 项不会计算为接受 1 个参数的函数
+  E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\xhash(99): note: 编译 类 模板 成员函数 "size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const" 时
+          with
+          [
+              _Kty=int,
+              _Hasher=int,
+              _Keyeq=std::equal_to<int>
+          ]
+  E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\xhash(1153): note: 参见对正在编译的函数 模板 实例化“size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()(const _Kty &) const”的引用
+          with
+          [
+              _Kty=int,
+              _Hasher=int,
+              _Keyeq=std::equal_to<int>
+          ]
+  E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\unordered_set(25): note: 参见对正在编译的 类 模板 实例化 "std::_Uhash_compare<_Kty,_Hasher,_Keyeq>" 的引用
+          with
+          [
+              _Kty=int,
+              _Hasher=int,
+              _Keyeq=std::equal_to<int>
+          ]
+  E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\xhash(204): note: 参见对正在编译的 类 模板 实例化 "std::_Uset_traits<_Kty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>" 的引用
+          with
+          [
+              _Kty=int,
+              _Hasher=int,
+              _Keyeq=std::equal_to<int>,
+              _Alloc=std::allocator<int>
+          ]
+  E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\unordered_set(57): note: 参见对正在编译的 类 模板 实例化 "std::_Hash<std::_Uset_traits<_Kty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>" 的引用
+          with
+          [
+              _Kty=int,
+              _Hasher=int,
+              _Keyeq=std::equal_to<int>,
+              _Alloc=std::allocator<int>
+          ]
+  D:\GitHub\SHoliday\DayEleven\DayEleven\DayEleven.cpp(130): note: 参见对正在编译的 类 模板 实例化 "std::unordered_set<int,int,std::equal_to<_Kty>,std::allocator<_Kty>>" 的引用
+          with
+          [
+              _Kty=int
+          ]
