@@ -1,0 +1,7 @@
+﻿  DayThirteen.cpp
+D:\GitHub\SummerHoliday\DayThirteen\DayThirteen\DayThirteen.cpp(5): error C2143: 语法错误: 缺少“;”(在“<<”的前面)
+D:\GitHub\SummerHoliday\DayThirteen\DayThirteen\DayThirteen.cpp(5): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\GitHub\SummerHoliday\DayThirteen\DayThirteen\DayThirteen.cpp(5): error C3873: “0x201c”: 不允许将此字符作为标识符的第一个字符
+D:\GitHub\SummerHoliday\DayThirteen\DayThirteen\DayThirteen.cpp(5): error C2001: 常量中有换行符
+E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\sal.h(2361): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+E:\Visual Studio 2019\VC\Tools\MSVC\14.20.27508\include\sal.h(2361): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
