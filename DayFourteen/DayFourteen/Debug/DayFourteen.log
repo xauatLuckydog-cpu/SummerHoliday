@@ -1,0 +1,5 @@
+﻿  DayFourteen.cpp
+D:\GitHub\SummerHoliday\DayFourteen\DayFourteen\DayFourteen.cpp(27): warning C4018: “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayFourteen\DayFourteen\DayFourteen.cpp(29): warning C4018: “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayFourteen\DayFourteen\DayFourteen.cpp(32): warning C4018: “<”: 有符号/无符号不匹配
+  DayFourteen.vcxproj -> D:\GitHub\SummerHoliday\DayFourteen\Debug\DayFourteen.exe
