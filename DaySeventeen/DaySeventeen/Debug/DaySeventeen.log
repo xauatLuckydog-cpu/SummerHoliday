@@ -1,0 +1,4 @@
+﻿  DaySeventeen.cpp
+D:\GitHub\SummerHoliday\DaySeventeen\DaySeventeen\DaySeventeen.cpp(14): warning C4018: “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DaySeventeen\DaySeventeen\DaySeventeen.cpp(22): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
+  DaySeventeen.vcxproj -> D:\GitHub\SummerHoliday\DaySeventeen\Debug\DaySeventeen.exe
