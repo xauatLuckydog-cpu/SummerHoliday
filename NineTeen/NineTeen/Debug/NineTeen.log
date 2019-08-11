@@ -1,0 +1,7 @@
+﻿  NineTeen.cpp
+D:\GitHub\SummerHoliday\NineTeen\NineTeen\NineTeen.cpp(35): warning C4018: “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\NineTeen\NineTeen\NineTeen.cpp(38): warning C4018: “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\NineTeen\NineTeen\NineTeen.cpp(73): warning C4018: “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\NineTeen\NineTeen\NineTeen.cpp(77): warning C4018: “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\NineTeen\NineTeen\NineTeen.cpp(108): warning C4018: “<”: 有符号/无符号不匹配
+  NineTeen.vcxproj -> D:\GitHub\SummerHoliday\NineTeen\Debug\NineTeen.exe
