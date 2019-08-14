@@ -1,0 +1,7 @@
+﻿  DayTwentyTwo.cpp
+D:\GitHub\SummerHoliday\DayTwentyTwo\DayTwentyTwo\DayTwentyTwo.cpp(167,31): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyTwo\DayTwentyTwo\DayTwentyTwo.cpp(255,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyTwo\DayTwentyTwo\DayTwentyTwo.cpp(256,22): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyTwo\DayTwentyTwo\DayTwentyTwo.cpp(270,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyTwo\DayTwentyTwo\DayTwentyTwo.cpp(271,22): warning C4018:  “<”: 有符号/无符号不匹配
+  DayTwentyTwo.vcxproj -> D:\GitHub\SummerHoliday\DayTwentyTwo\Debug\DayTwentyTwo.exe
