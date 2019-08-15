@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
+#include <algorithm>
 using namespace std;
 
 struct ListNode
@@ -16,11 +18,75 @@ ListNode* creat(vector<int> vec) {//利用传入的vector建立一个新的链�
 	ListNode* p, * pre, * head;
 	head = new ListNode(vec[0]);
 	pre = head;
-	for (int i = 1; i < 5; i++) {
+	for (int i = 1; i < vec.size(); i++) {
 		p = new ListNode(vec[i]);
 		pre->next = p;
 		pre = p;
 	}
+	return head;
+}
+
+vector<ListNode*> splitListToParts(ListNode* root, int k) {
+		vector<ListNode*> ret;
+		ListNode* cur = root;
+		int count = 0;
+		while (cur) {
+			count++;
+			cur = cur->next;
+		}
+		cur = root;
+		int size = count / k;
+		int rem = count % k;
+		for (int i = 0; i < k; ++i) {
+			if (cur) {
+				ListNode* Head = new ListNode(-1);
+				ListNode* prev = Head;
+
+				for (int j = 0; j < size + (rem > 0 ? 1 : 0); ++j) {
+					prev->next = new ListNode(cur->val);
+					prev = prev->next;
+					cur = cur->next;
+				}
+				rem--;
+				ret.push_back(Head->next);
+			}
+			else {
+				ret.push_back(NULL);
+			}
+		}
+		return ret;
+}
+
+
+ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+	vector<int> vec1, vec2;
+	vector<int> res;
+	int c = 0;
+	ListNode* head = NULL;
+	while (l1)vec1.push_back(l1->val), l1 = l1->next;
+	while (l2)vec2.push_back(l2->val), l2 = l2->next;
+	while (!vec1.empty() && !vec2.empty()) {
+		c += vec1.back() + vec2.back();
+		res.push_back(c % 10);
+		c /= 10;
+		vec1.pop_back();
+		vec2.pop_back();
+	}
+	while (!vec1.empty()) {
+		c += vec1.back();
+		res.push_back(c % 10);
+		c /= 10;
+		vec1.pop_back();
+	}
+	while (!vec2.empty()) {
+		c += vec2.back();
+		res.push_back(c % 10);
+		c /= 10;
+		vec2.pop_back();
+	}
+
+	if (c) res.push_back(c);
+	head = creat(vector<int>(res.rbegin(), res.rend()));
 	return head;
 }
 
@@ -64,54 +130,87 @@ bool insertNode(ListNode* head, int target) {//插入到第一个val大于target
 	return false;
 }
 
-int main()
-{
-	vector<int> vec = { 1,2,3,4,5 };
-	auto p = creat(vec);
-	auto flag22 = insertNode(p, 0);
-	
-	//char arrays[] = "China";
-	//int n = sizeof(arrays);
-	//char s1[10], s2[10] = { "books" };
-	//strcpy_s(s1, s2);
-	//int a[3][4][2];
-	//double* array[8];
-	vector<int> array;
-	array.push_back(100);
-
-	array.push_back(300);
-
-	array.push_back(300);
-
-	array.push_back(500);
-	vector<int>::iterator itor;
-	for (itor=array.begin();itor!=array.end(); itor++)
-	{
-		if (*itor == 300) {
-			itor = array.erase(itor);
+bool isPalindrome(string s) {
+	if (s.empty()) return true;
+	for (int i = 0; i < s.length();) {
+		if ((s[i] < 'a' || s[i] > 'z') && (s[i] < 'A' || s[i] > 'Z') && (s[i]<'0' || s[i]>'9'))
+		{
+			s.erase(i, 1);
+			continue;
 		}
+		i++;
 	}
-	for (itor = array.begin(); itor != array.end(); itor++)
+	if (s.length() == 1)return false;
+	int i = 0, j = s.length() - 1;
+	for (int i = 0; i < s.size(); i++)
 	{
-		cout << *itor << " ";
+		s[i] = tolower(s[i]);
 	}
 
-	int flag = 0;
-	bool test = 0;
+	while (i <= j)
+	{
+		if (s[i] != s[j])return false;
+		if (i > j)return true;
 
-	if (!array.empty())cout << "yes";
-	else cout << "no";
-
-    std::cout << "Hello World!\n";
+		i++;
+		j--;
+	}
+	return true;
 }
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
+void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+	vector<int> res;
+	int i = 0, j = 0;
+	for (i,j; i < m && j < n;)
+	{
+		if (nums1[i] > nums2[j]) res.push_back(nums2[j++]);
+		res.push_back(nums1[i++]);
+	}
+	while (i < m)res.push_back(nums1[i++]);
+	while (j < n)res.push_back(nums2[j++]);
+	nums1 = res;
+}
 
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
+void moveZeroes(vector<int>& nums) {
+	int n = nums.size();
+	for (int i = 0; i < n;)
+	{
+		if (nums[i] == 0)
+		{
+			nums.erase(nums.begin() + i);
+			nums.push_back(0);
+			n--;
+			continue;
+		}
+		i++;
+	}
+}
+
+void reverseString(vector<char>& s) {
+	reverse(s.rbegin(), s.rend());
+}
+
+string reverseVowels(string s) {
+	int i = 0, j = s.length() - 1;
+	if (s.empty())return s;
+	while (i < j)
+	{
+		if ((s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') && (s[j] == 'a' || s[j] == 'e' || s[j] == 'i' || s[j] == 'o' || s[j] == 'u') || (s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U') && (s[j] == 'A' || s[j] == 'E' || s[j] == 'I' || s[j] == 'O' || s[j] == 'U')) {
+			swap(s[i], s[j]);
+			i++;
+			j--;
+		}
+		if ((s[i] != 'a' && s[i] != 'e' && s[i] != 'i' && s[i] != 'o' && s[i] != 'u' && s[i] != 'A' && s[i] != 'E' && s[i] != 'I' && s[i] != 'O' && s[i] != 'U')){
+			i++;
+		}
+		if ((s[j] != 'a' && s[j] != 'e' && s[j] != 'i' && s[j] != 'o' && s[j] != 'u' && s[j] != 'A' && s[j] != 'E' && s[j] != 'I' && s[j] != 'O' && s[j] != 'U')) {
+			j--;
+		}
+	}
+	return s;
+}
+
+int main()
+{
+	reverseVowels("aA");
+}
