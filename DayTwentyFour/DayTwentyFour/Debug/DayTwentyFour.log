@@ -1,0 +1,13 @@
+﻿  DayTwentyFour.cpp
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(30,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(38,12): warning C4018:  “>=”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(54,12): warning C4018:  “>=”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(70,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(116,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(146,12): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(153,12): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(169,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(183,12): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(256,20): warning C4018:  “>”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFour\DayTwentyFour\DayTwentyFour.cpp(278,25): warning C4018:  “<”: 有符号/无符号不匹配
+  DayTwentyFour.vcxproj -> D:\GitHub\SummerHoliday\DayTwentyFour\Debug\DayTwentyFour.exe
