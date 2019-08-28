@@ -1,0 +1,4 @@
+﻿  DayTwentySeven.cpp
+D:\GitHub\SummerHoliday\DayTwentySeven\DayTwentySeven\DayTwentySeven.cpp(14,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentySeven\DayTwentySeven\DayTwentySeven.cpp(25,21): warning C4018:  “<”: 有符号/无符号不匹配
+  DayTwentySeven.vcxproj -> D:\GitHub\SummerHoliday\DayTwentySeven\Debug\DayTwentySeven.exe

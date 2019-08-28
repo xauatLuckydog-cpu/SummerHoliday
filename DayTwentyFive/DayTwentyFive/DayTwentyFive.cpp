@@ -261,8 +261,39 @@ public:
 
 int main()
 {
-	Solution test;
-	test.firstNotRepeatingChar("UXjhrXGAyaVnKLtVmkwSwREyuJeJyuSOWsIfLzcpAcyLnhEqpWaMtPCGdSCjjPuukydlWNlhaPhCXToCAFSDIVDGRWwdulBJfSiOvDtHIOWuGjUxmlsqdtSyVwbqUpedwVdvCHnQaNvInFnDBOAghFrzTPmRgvNrWbrkNaIGKiZTsfKyGroJqfZxZPhKvTzDhDSLiYlkoAJPJhGjxtLQHeWcWZzZafkFnMbHpAYVmTNqFBGXwFSQpkHjmnoMShaEGYIHZYRbxSSSAdGGkmilRXWrfNAkHFuggitvsSnlzIOVdZpGggEfDxSOSlmkFaPSmnjgRogKQpGyOVuGCDvFvzLVVFmolPIiMXGiWshIIQYopthnsRfRIiyvSVXwqprHTrXGPNmSeqyFvYzrZbCCOoltPbNQKLmQrTROwdifosZwAyznAPWXDkULetbHpTUZhxqfkZdyAfCMyjLoZQsaVyxnAGFxweAnQZrmeXhHekZgBNLJPrOJrEgtBMqlkgSryyBFyxZzNxzgMIgbWMgwfBEizXjvuvJvELtiRfVYuKDzSOOVpRKTKOeeztjrynBpKaIowRncgvLyXpNDascHMAyJfYzYsLKQkowJPZYqIUKTHLqSVABkNYkPYHKMafgHoUGcRKkMhSgiuMRHtlZtIoyOaOAVVkaNiakvBbEaIaIiggooZJAIsfdQfeaYaGginfoTxFTpyzdXAkwxBoxTvkmNVszWiGqxyWgIUasMMAsYvZBxDkWWCzOgWGYyRobBOHQnDULwkGKVVRxXtYXqDyLnIVGmeQEKiqYpHGoEznkyyPfKrLoZfNDtrlNoKudYEwYVbnlTYJAjrDlgMZfOTsNSLBdUAdBqlauMdruicvqUTZSpHLdAzsAxCeXqWuUtZUEJAtmwKgqqaldDGMOhvqHEHkkkRHrJLHnOzVhAyCevqmFdCPWoqRrLsyRswqqFnmRRIvPgtZdEukkfWTgIgXFQrxdTDEWkkiUdBjdR");
+	//Solution test;
+	//string s = "asdasd[asdasd[[asd[a[sd[asd";
+	//vector<vector<char>> input;
+	//int n, m, x, y;
+	//char c;
+	//cin >> n >> m >> x >> y;
+	//for (int i = 0; i < n; i++)
+	//{
+	//	for (int j = 0; j < m; j++)
+	//	{
+	//		cin >> c;
+	//		input[i].push_back(c);
+	//	}
+	//}
+	//for (int i = 0; i < n; i++) {
+	//	if()
+	//}
+	vector<vector<char>> input;
+	int n, m, x, y;
+	string s;
+	cin >> n >> m >> x >> y;
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < m; j++)
+		{
+			cin >> s;
+			for (auto c : s) {
+				input[i].push_back(c);
+			}
+			
+		}
+	}
+
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

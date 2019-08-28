@@ -1,0 +1,4 @@
+﻿  DayTwentySix.cpp
+D:\GitHub\SummerHoliday\DayTwentySix\DayTwentySix\DayTwentySix.cpp(30,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentySix\DayTwentySix\DayTwentySix.cpp(31,17): warning C4018:  “<”: 有符号/无符号不匹配
+  DayTwentySix.vcxproj -> D:\GitHub\SummerHoliday\DayTwentySix\Debug\DayTwentySix.exe

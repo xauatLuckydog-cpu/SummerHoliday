@@ -1,7 +1,8 @@
 ﻿  DayTwentyFive.cpp
-D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(41,28): warning C4018:  “<”: 有符号/无符号不匹配
-D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(79,21): warning C4018:  “<”: 有符号/无符号不匹配
-D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(88,1): warning C4244:  “-=”: 从“__int64”转换到“int”，可能丢失数据
-D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(93,14): warning C4244:  “初始化”: 从“__int64”转换到“int”，可能丢失数据
-D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(94,9): warning C4244:  “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(37,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(142,28): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(180,21): warning C4018:  “<”: 有符号/无符号不匹配
+D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(189,1): warning C4244:  “-=”: 从“__int64”转换到“int”，可能丢失数据
+D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(194,14): warning C4244:  “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\GitHub\SummerHoliday\DayTwentyFive\DayTwentyFive\DayTwentyFive.cpp(195,9): warning C4244:  “初始化”: 从“__int64”转换到“int”，可能丢失数据
   DayTwentyFive.vcxproj -> D:\GitHub\SummerHoliday\DayTwentyFive\Debug\DayTwentyFive.exe
